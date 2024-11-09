@@ -15,7 +15,7 @@
 //         for(int j=1;j<floor-i+1;j++){
 //             printf(" ");
 //         }
-//         for (int k=1;k< 2*i ;k++){
+//         for (int k=1;k< 3*i ;k++){
 //             printf("s");
 //         }
 //         printf("\n");
@@ -74,7 +74,7 @@
 //     putchar('b\n');
 //     puts("  이 함수는 문자열만 출력한다");
 
-//     double city, rush, exp;
+//     double city, rush, exp; 
 //     double average;
 
 //     city = 12.9;
@@ -98,3 +98,50 @@
 //     printf("(x==10)||(y==30) =%d\n ",(x==10)&&(y==30));
 //     printf("(x==10)||(y==20) =%d\n ",(x==10)&&(y==20));
 // }
+
+// int main(void){
+//     int x = 5 ,y=3;
+    
+//     printf("%d &%d \n",x,y,x&y);
+//     printf("%d & %d = %d \n",x,y,x&y);
+//     printf("%d | %d = %d \n",x,y,x|y);
+//     printf("%d ^ %d = %d \n",x,y,x^y);
+//     printf("~%d = %d \n",x,~x);
+//     //int는 32 bit
+// }
+
+// int main(void){
+//     int x = 20, y=2;
+//     printf("%d<<%d = %d\n",x,y,x<<y);
+//     printf("%d<<%d = %d\n",x,y,x<<(y+1));
+//     printf("%d>>%d = %d\n",x,y,x>>y);
+//     printf("%d>>%d = %d\n",x,y,x>>(y+1));
+// }
+
+// int main(void){
+//     int score = 60;
+//     if(score>60){
+//         printf("합격입니다.");
+//     }
+//     else{
+//         printf("불합격입니다.");
+//     }
+
+    
+
+// }
+int main(void){
+    int score;
+
+    printf("점수를  입력하세요: ");
+    scanf("%d", &score);
+
+    if(score>60){
+        printf("합격입니다.\n");
+        printf("축하합니다.\n");
+        printf("등록하세요.\n");
+        
+    }
+    printf("당신의 점수는 : %d 점 입니다",score);
+    return;
+}
