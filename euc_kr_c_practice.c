@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // int main(void){
 //     int select, value;
@@ -173,25 +174,278 @@
 // 	return 0;
 // }
 
+/***** */
 
-void del_char(char *string);
-int main(void)
-{
-    char string[] ="school";
-    del_char(string);
-    return 0;
-}
+// void del_char(char *string);
+// int main(void)
+// {
+//     char string[] ="school";
+//     del_char(string);
+//     return 0;
+// }
 
-void del_char(char *string)
-{
-    int i,j;
-    for(i=j=0;*(string+i) != '\0'; ++i){
-        if(*(string+i) != 'o'){
-            *(string+j)=*(string+i);
-            j++;
-        }
-    }
-    *(string+j)= '\0';
-    printf("result: %s\n",string);
-}
+// void del_char(char *string)
+// {
+//     int i,j;
+//     for(i=j=0;*(string+i) != '\0'; ++i){
+//         if(*(string+i) != 'o'){
+//             *(string+j)=*(string+i);
+//             j++;
+//         }
+//     }
+//     *(string+j)= '\0';
+//     printf("result: %s\n",string);
+// }
 
+/***** */
+
+// void exchange_sort(int* );
+// void exchange_data(int*, int*);
+// void display_arr(int*);
+
+// int main(void){
+//     int arr[5] ={5,4,3,2,1};
+//     display_arr(arr);
+
+//     exchage_sort(arr);
+//     display_arr(arr);
+
+//     return 0;
+// }
+
+// void exchange_data(int *p, int *q)
+// {
+//     int temp;
+//     temp = *p;
+//     *p = *q;
+//     *q = temp;
+// }
+
+// void exchage_sort(int *x)
+// {
+//     int i, k;
+//     for(i=0;i<5;i++)
+//         for(k = i+1;k<5;k++)
+//             if( *(x+i) > *(x+k) )
+//                 exchange_data(x+i,x+k); 
+// }
+
+
+
+// void display_arr(int *x)
+// {
+//     int i;    
+
+//     for (i=0;i<5;i++)
+//         printf("%3d",*(x+i));
+//     printf("\n");
+
+// }
+
+// void add(int x, int y);
+// void sub(int x, int y);
+
+// int main(void)
+// {
+//     int  x=10, y=20;
+//     void (*add_ptr) (int,int);
+//     void (*sub_ptr) (int,int);
+
+//     add_ptr = add;
+//     sub_ptr = sub;
+
+//     add_ptr(x,y);
+//     sub_ptr(x,y);
+
+//     return 0;
+// }
+
+// void add(int x, int y)
+// {
+//     printf("add function result: %d\n",x+y);
+// }
+
+// void sub(int x, int y)
+// {
+//     printf("add function result: %d\n",x-y);
+// }
+
+//구조체!!!!
+// struct customer
+// {
+//     char name[20];el);
+//     printf("%s,%s",info.name,info.tel);
+//     return 0;
+// }
+// ///구조체 배열 
+
+// struct record
+// {
+//     char name[20];
+//     char dept[10];
+//     int num;
+//     char tel[13];
+
+// };
+// int main(void)
+// {
+//     struct customer info;
+//     gets(info.name);
+//     gets(info.t)
+//     char tel[13];
+// } stduend[100];
+
+
+// struct record
+// {
+//     char name[20];
+//     char dept[10];
+//     int num;
+//     char tel[13];
+// };
+// struct record stduend[100];
+
+// struct record{ 
+//     char *name;
+//     char *dept;
+//     int num;
+//     char *tel;
+// };
+// struct record student[2] = {{"이승성","기계공학",130910,"010-9999-1111"},
+//                             {"현재열","기계공학",130420,"010-4609-7898"}}
+
+// 1.포인터 선언
+// 2.파일열기, 스트림 생성
+// 3.파일 입출력 처리 
+// 4. 파일 닫기
+
+// int main(void)
+// {
+//     FILE *fp;
+//     fp = fopen("data.txt","r");
+//     if (fp == NULL) 
+//     {
+//         printf("File open Error\n");
+//         exit(1);
+//     }
+    
+//     printf("we opened file\n");
+//     fclose(fp);
+//     printf("we close file");
+    
+//     return 0;
+// }
+
+
+// int main(void)
+// {
+//     FILE *fp;
+//     int code, cnt, i;
+
+//     fp=fopen("product.txt","w");
+//     if (fp ==NULL)
+//     {
+//         printf("file open error");
+//         exit(1);
+//     }
+//     for (int i=0;i<4;i++)
+//     {
+//         scanf("%d",&cnt);
+//         scanf("%d",&code);
+//         fprintf(fp,"%d,%d\n",code,cnt);
+//         fprintf(stdout,"%d,%d\n",code,cnt);
+//         fscanf(fp,"%d",&cnt);
+//     }
+
+// }
+
+// int main(void)
+// {
+//     FILE *fp = fopen("product.txt","r");
+//     int i, code, cnt, kkk;
+
+//     if (fp ==NULL)
+//     {
+//         printf("file open error\n");
+//         exit(1);
+//     }
+
+//     printf("file data read\n");
+
+//     for (i=1;i<4;i++)
+//     {
+//         fscanf(fp, "%d %d %d\n", &code,&cnt, &kkk);
+//         printf("%d %d %d\n",code,cnt,kkk);
+//     }
+//     fclose(fp);
+//     printf("we read all data");
+//     return 0;
+// }
+
+// while (fscanf(fp,"%d %d", &code, &cnt") != EOF)
+//     printf("%d %d. &code, &cnt")
+
+
+// int main(void)
+// {
+//     FILE *fp = fopen("product.txt","r");
+//     int i, code, cnt;
+
+//     if (fp ==NULL)
+//     {
+//         printf("file open error\n");
+//         exit(1);
+//     }
+
+//     printf("file data read\n");
+
+//     while (fscanf(fp, "%d %d", &code,&cnt) !=EOF)
+//     {
+//         //fscanf(fp, "%d %d %d\n", &code,&cnt, &kkk);
+//         printf("%d %d\n", code,cnt);
+//     }
+//     fclose(fp);
+//     printf("we read all data");
+//     return 0;
+// }
+
+
+// int main(void)
+// {
+//     FILE *fp = fopen("product.txt","r");
+//     int i, code, cnt;
+
+//     if (fp ==NULL)
+//     {
+//         printf("file open error\n");
+//         exit(1);
+//     }
+
+//     printf("file data read\n");
+//     fscanf(fp, "%d %d", &code,&cnt);
+//     while (!feof(fp))
+//     {
+//         //fscanf(fp, "%d %d %d\n", &code,&cnt, &kkk);
+//         printf("%d %d\n", code,cnt);
+//         fscanf(fp, "%d %d", &code,&cnt);
+//     }
+//     fclose(fp);
+//     printf("we read all data");
+//     return 0;
+// }
+                                                                           
+
+// /// MACRO 함수///               
+// #define EVEN_ODD(p) if (p%2){printf("odd -%d\n",p); ++ocnt;}\
+//                         else {printf("even -` %d\n",p); ++ecnt;}
+
+// int main(void)
+// {
+//     int i = 0;
+//     int ocnt =0 ;int ecnt = 0;
+//     int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+//     for (i=0;i<10;i++)
+//         EVEN_ODD(arr[i]);
+    
+//     printf("odd :%d , even:%d\n",ocnt,ecnt);
+// }
