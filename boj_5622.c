@@ -33,7 +33,7 @@ int i_to_t(int a)
     if (a<30)
         return 9+2;
 }
-
+///
 int main(void)
 {
     int num;
