@@ -10,7 +10,7 @@ public:
 };
 
 void bank::use_counter(int _in, int _out){
-    safe += _in;
+    safe += _in;`
     safe -= _out;
 
     cout<<"in : "<< _in <<endl;
@@ -24,7 +24,7 @@ bank::bank(){
     cout<<endl;
 }
 int main(){
-    bank my_bank;
+    bank my_bank;///상송
     my_bank.use_counter(0,20);
     my_bank.use_counter(50,0);
     my_bank.use_counter(100,50);
