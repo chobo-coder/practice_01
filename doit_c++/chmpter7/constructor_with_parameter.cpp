@@ -20,7 +20,7 @@ public:
     monster_a(){
         cout<<"monster_a constructor"<<endl;
     };
-    monster_a(int x, int y) : location{x,y} {
+    monster_a(int x, int y) : location{x,y} {   //초기화 목록
         cout<< "monster_a constructor with variable";
     };
     void show_location(){
