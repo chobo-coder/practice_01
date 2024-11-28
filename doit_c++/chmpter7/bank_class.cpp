@@ -10,7 +10,7 @@ public:
 };
 
 void bank::use_counter(int _in, int _out){
-    safe += _in;`
+    safe += _in;
     safe -= _out;
 
     cout<<"in : "<< _in <<endl;
