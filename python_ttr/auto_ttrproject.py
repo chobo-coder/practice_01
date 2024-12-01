@@ -103,6 +103,8 @@ optimal_conditions_dict = {
     "E": int(optimal_conditions[4]),
     "F": int(optimal_conditions[5]),
     "G": int(optimal_conditions[6]),
+
+
     "categorical_D": categorical_options[int(optimal_conditions[7])]
 }
 print("\nOptimal Test Conditions Found:")
