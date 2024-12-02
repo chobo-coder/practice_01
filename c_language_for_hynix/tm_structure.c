@@ -23,7 +23,7 @@ int main(void){
     struct tm* pTimeInfo =malloc(sizeof(struct tm));;//tm* structure를 가지는 변수 pTimeInfo 선언
 
     rawTime == time(NULL);//이때 Time을 배정해줌
-    pTimeInfo =localtime(&rawTime);//현재 시간을 sturuct pTimeInfo에 넣어줌 
+    pTimeInfo = localtime(&rawTime);//현재 시간을 sturuct pTimeInfo에 넣어줌 
     //pTimeInfo는 
 
     printf("time_t:%11d\n",rawTime); 
