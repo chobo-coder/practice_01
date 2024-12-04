@@ -29,6 +29,8 @@ int binarySearch(int arr[], int size, int target){
     return 0;  
 } 
 
+
+
 int main(void){
     int num_sang ;
     int *arr_1;
