@@ -1,0 +1,32 @@
+{
+  "name": "asc-syntax",
+  "displayName": "ASC Syntax Highlighting",
+  "description": "Syntax highlighting for Advantest Tester Language (ATL) using .asc extension",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "asc",
+        "aliases": ["ASC", "asc"],
+        "extensions": [".asc"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "asc",
+        "scopeName": "source.asc",
+        "path": "./atl.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chobo_coder/practice_01.git"
+  }
+}

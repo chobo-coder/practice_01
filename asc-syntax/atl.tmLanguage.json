@@ -1,0 +1,35 @@
+{
+  "scopeName": "source.asc",
+  "patterns": [
+    {
+      "match": ";.*",
+      "name": "comment.line.semicolon.asc"
+    },
+    {
+      "match": "\\b(IF|THEN|ELSE|DO|END|REG|SEND|MEAS|START|WAIT|GOSUB)\\b",
+      "name": "keyword.control.asc"
+    },
+    {
+      "match": "\\b(int|float|string|bool)\\b",
+      "name": "storage.type.asc"
+    },
+    {
+      "match": "\\b([A-Z]+)\\b",
+      "name": "constant.language.asc"
+    },
+    {
+      "match": "\\b\\d+\\b",
+      "name": "constant.numeric.asc"
+    },
+    {
+      "match": "\\\".*?\\\"",
+      "name": "string.quoted.double.asc"
+    },
+    {
+      "match": "\\\".*?\\\"",
+      "name": "string.quoted.double.asc"
+    }
+  ],
+  "repository": {},
+  "scopeName": "source.asc"
+}
