@@ -53,9 +53,6 @@ int main()
     printf("%f\n",IBISVAL[0][0][0]);
     
     return 0;
-
 }
-
-
 
 
