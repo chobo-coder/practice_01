@@ -3,6 +3,8 @@
         "stdio.h": "c",
         "ostream": "cpp",
         "iostream": "cpp",
-        "cstdio": "c"
-    }
+        "cstdio": "c",
+        "IBISTEST_MAC.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
