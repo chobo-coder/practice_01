@@ -14,11 +14,19 @@
       "name": "storage.type.asc"
     },
     {
-      "match": "\\b([A-Z]+)\\b",
+      "match": "\\b(TRUE|FALSE|ON|OFF)\\b",
       "name": "constant.language.asc"
     },
     {
-      "match": "\\b\\d+\\b",
+      "name": "constant.numeric.hexadecimal.asc",
+      "match": "#[0-9A-Fa-f]+"
+    },
+    {
+      "name": "constant.numeric.logical.asc",
+      "match": "\\.[0-9]+"
+    },
+    {
+      "match": "\\b(0[xX][0-9a-fA-F]+|\\d+(\\.\\d+)?([eE][+-]?\\d+)?|0[0-7]+)\\b",
       "name": "constant.numeric.asc"
     },
     {
