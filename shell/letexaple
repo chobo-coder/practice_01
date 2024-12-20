@@ -1,0 +1,9 @@
+num1=42
+num2=9
+
+let re=num1+num2
+echo "re: ${re}"
+
+
+
+

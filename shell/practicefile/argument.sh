@@ -1,0 +1,6 @@
+echo "script name: ${0}"
+echo "agument coutn: ${#}"
+echo "augumets : ${*}"
+echo "augumets : ${@}"
+echo "augument 1: ${1}"
+echo "augumetn 2: ${2}" 
